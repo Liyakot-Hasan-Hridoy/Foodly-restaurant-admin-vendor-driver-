@@ -10,6 +10,8 @@ const userRoute = require("./routes/userRoutes");
 
 dotenv.config();
 
+
+
 mongoose.connect(process.env.MONGOURL).then(()=> console.log("Database Connected")).catch((error)=>{
    console.log(error);
 });
