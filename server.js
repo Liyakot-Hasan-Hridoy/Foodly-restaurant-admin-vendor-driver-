@@ -7,6 +7,7 @@ const restaurantRouter = require("./routes/restaurantRoutes");
 const foodroutes = require("./routes/foodRoutes");
 const ratingRoutes = require("./routes/ratingRoutes");
 const userRoute = require("./routes/userRoutes");
+const addressRoutes = require("./routes/addressRoutes");
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ app.use("api/restaurant",restaurantRouter);
 app.use("api/foods",foodroutes);
 app.use("api/rating",ratingRoutes);
 app.use("api/user",userRoute);
+app.use("api/address",addressRoutes);
 
 app.listen(process.env.PORT, () => {
     console.log("Local Server Connected " + process.env.PORT);
